@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- metadata that includes website title, links the css and js sheets, and the code for the favicon -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>new gameㅤ☆ㅤrpsls!</title>
+  <link rel="icon" type="images/x-icon" href="images/favicon.ico">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="script.js"></script>
+</head>
+
+<body>
+<br id="top"><br>
+<h1>《 the game 》</h1>
+<br><br>
+  <!--changes the page when button is clicked to index.html--> 
+<button onclick="home()">return to home</button>
+<br><br><br><br>
+<h3>↓ press on one of the images below to make your choice! ↓</h3>
+<br><br>
+<table>
+  <thead>
+    <tr>
+      <td width="100px"><h5>rock</h5></td>
+      <td width="100px"><h5>paper</h5></td>
+      <td width="100px"><h5>scissors</h5></td>
+      <td width="100px"><h5>lizard</h5></td>
+      <td width="100px"><h5>spock</h5></td>
+    </tr>
+  </thead>
+  <tr>
+    <!--buttons with images inside them to show what the player can choose--> 
+    <!--each one runs a function specific to what choice they are as well as all same function that will display the user's choice in a table data tag later on. additionally, these buttons act as a jumplink to the other section of the game--> 
+    <td><button onclick="rock(), button(), window.location.href='#game';"><img src="images/rock.png" style="width: 60px;"></button></td>
+    <td><button onclick="paper(), button(), window.location.href='#game';"><img src="images/paper.png" style="width: 60px;"></button></td>
+    <td><button onclick="scissors(), button(), window.location.href='#game';"><img src="images/scissors.png" style="width: 60px;"></button></td>
+    <td><button onclick="lizard(), button(), window.location.href='#game';"><img src="images/lizard.png" style="width: 60px;"></button></td>
+    <td><button onclick="spock(), button(), window.location.href='#game';"><img src="images/spock.png" style="width: 60px;"></button></td>
+  </tr>
+</table>
+  
+<br><br><br><br><br><br>
+<hr>
+<br><br><br><br id="game">
+  <table>
+  <thead>
+    <tr>
+      <!--Table to display the titles of the columns that represent the player's choice, the cpu's choice, and who won that round--> 
+      <th width="250px"><h3>player choice</h3></th>
+      <th width="250px"><h3>CPU choice</h3></th>
+      <th width="250px"><h3>result</h3></th>
+    </tr>
+  </thead>
+
+  <tfoot></tfoot>
+
+    
+  <tbody> 
+    <tr>
+      <!--this is where the images for the player's choice will be shown, with placeholder text before a choice button is clicked--> 
+      <td><div id="pchoice"><br><br>make a choice using one of the buttons above!<br><br><br><br></div></td>
+      <td><div id="cpuchoice"><br><br>make a choice using one of the buttons above, and then the cpu will make its choice!<br><br><br><br></div><div id="cpustatement"></div></td>
+      <td><div id="results"><br>make a choice using one of the buttons above, and then the results will be revealed once the cpu's choice is revealed as well!<br><br></div></td>
+    </tr>
+
+   <!--table for scoreboard-->
+    <tr>
+      <td style="border: 1px solid black" colspan="3"> <details onclick="score()"><summary>click to see the scoreboard!</summary>
+        <br>
+        <center>
+        <table style="margin: 10px;">
+          <thead></thead>
+          <tfoot></tfoot>
+          <tr>
+            <td>
+              <h4 id="rds"></h4>
+            </td>
+            <td width="100px"><b>✰</b></td>
+            <td>
+              <h4 id="pscore"></h4>
+              <h4 id ="cpuscore">
+            </td>
+          </tr>
+          <tr>
+            <!--button that brings you back up to the rpsls user button options-->
+            <td colspan="3"><button onclick="window.location.href= '#top'">make another choice!</button></td>
+          </tr>
+        </table>
+        </center>
+      </details>
+      </td>
+  </tr>
+  </tbody>
+  </table>
+  <br><br><br><br><br><br>
+  <!--button that, when run, runs the reset() function-->
+  <button onclick="reset()">new game | reset</button>
+  <br><br>
+</body>
+
+</html>

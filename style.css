@@ -1,0 +1,64 @@
+/*changes the background color of the page, aligns text to center, changes the font, and changes the cursor while it is on the page itself*/
+body{
+  background-color: #fff5cc;
+  text-align: center; 
+  font-family: Lucida Sans Typewriter;
+  cursor: url(images/pikachu.png) 28 25, auto;
+}
+
+/*changes the margins and other style elements of the header tags*/
+h2{
+  font-style: bold;
+  font-size: 30px;
+  margin: 30px;
+}
+
+h5{
+  margin: 2px;
+}
+
+/*specifies the margin distance for the dropdown menus*/
+details{
+  margin: 30px;
+}
+
+/*changes the various margin, padding, justify, align, and float specifics of table elements*/
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  justify-content: center;
+  text-align: center;
+  float: center;
+}
+
+/*various list element style css*/
+.ul{
+  text-align: left;
+  display: inline-block;
+}
+
+.li{
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+/*changes the color of the buttons, the margin and padding, and the font*/
+button{
+  background-color: #ffdc8a;
+  margin: 14px;
+  padding: 10px;
+  font-family: Lucida Sans Typewriter;
+}
+
+/*makes the button turn a different color when you hover over it, as well as keep the cursor the image when your mouse is hovering over it*/
+button:hover{
+  background-color: white;
+  cursor: url(images/pikachu.png) 28 25, auto;
+}
