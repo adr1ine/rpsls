@@ -1,5 +1,5 @@
 //list of images and choices for the functons later on
-var list = ["<img src='images/rock.png'' height='70px'>", "<img src='images/paper.png'' height='70px'>", "<img src='images/scissors.png'' height='70px'>", "<img src='images/lizard.png' height='70px'>", "<img src='images/spock.png'' height='70px'>"]
+var list = ["<img src='rock.png'' height='70px'>", "<img src='paper.png'' height='70px'>", "<img src='scissors.png'' height='70px'>", "<img src='lizard.png' height='70px'>", "<img src='spock.png'' height='70px'>"]
 var listnotag = [
   "rock", "paper", "scissors", "lizard", "spock"
 ]
@@ -15,31 +15,31 @@ let rounds = 0;
 
 //functions for popping up the respective image for the user's choice and the button to reveal the cpu's choice
 function rock() {
-  document.getElementById("pchoice").innerHTML="<br><br><br><img src='images/rock.png' height='70'><br><br>you picked rock!<br><br><br><br>";
+  document.getElementById("pchoice").innerHTML="<br><br><br><img src='rock.png' height='70'><br><br>you picked rock!<br><br><br><br>";
   document.getElementById("results").innerHTML="make a choice using one of the buttons above, and then the results will be revealed once the cpu makes its choice as well!";
   pchoice = 0;
 }
 
 function paper() {
-  document.getElementById("pchoice").innerHTML="<br><br><br><img src='images/paper.png' height='70'><br><br>you picked paper!<br><br><br><br>";
+  document.getElementById("pchoice").innerHTML="<br><br><br><img src='paper.png' height='70'><br><br>you picked paper!<br><br><br><br>";
   document.getElementById("results").innerHTML="make a choice using one of the buttons above, and then the results will be revealed once the cpu makes its choice as well!";
   pchoice = 1;
 }
 
 function scissors() {
-  document.getElementById("pchoice").innerHTML="<br><br><br><img src='images/scissors.png' height='70'><br><br>you picked scissors!<br><br><br><br>";
+  document.getElementById("pchoice").innerHTML="<br><br><br><img src='scissors.png' height='70'><br><br>you picked scissors!<br><br><br><br>";
   document.getElementById("results").innerHTML="make a choice using one of the buttons above, and then the results will be revealed once the cpu makes its choice as well!";
   pchoice = 2;
 }
 
 function lizard() {
-  document.getElementById("pchoice").innerHTML="<br><br><br><img src='images/lizard.png' height='70'><br><br>you picked lizard!<br><br><br><br>";
+  document.getElementById("pchoice").innerHTML="<br><br><br><img src='lizard.png' height='70'><br><br>you picked lizard!<br><br><br><br>";
   document.getElementById("results").innerHTML="make a choice using one of the buttons above, and then the results will be revealed once the cpu makes its choice as well!";
   pchoice = 3;
 }
 
 function spock() {
-  document.getElementById("pchoice").innerHTML="<br><br><br><img src='images/spock.png' height='70'><br><br>you picked spock!<br><br><br><br>";
+  document.getElementById("pchoice").innerHTML="<br><br><br><img src='spock.png' height='70'><br><br>you picked spock!<br><br><br><br>";
   document.getElementById("results").innerHTML="make a choice using one of the buttons above, and then the results will be revealed once the cpu makes its choice as well!";
   pchoice = 4;
 }
@@ -156,11 +156,11 @@ function score(){
 
 //win function, takes the user to the winning ending page
 function win(){
-  document.getElementById("win").innerHTML = "<h3 style='font-size: 70px; margin-bottom: 10px;'>you win!</h3><img src='images/frog.gif' style='width: 160px; margin: 20px;'><br><br><button onclick='home()'>return to home</button><button onclick='again()'>play again?</button>";
+  document.getElementById("win").innerHTML = "<h3 style='font-size: 70px; margin-bottom: 10px;'>you win!</h3><img src='frog.gif' style='width: 160px; margin: 20px;'><br><br><button onclick='home()'>return to home</button><button onclick='again()'>play again?</button>";
 }
 //lose that takes the user to the losing ending page
 function lose(){
-  document.getElementById("lose").innerHTML = "<h3 style='font-size: 70px; margin-bottom: 10px;'>you lose.</h1><br><img src='images/froglose.gif' style='width: 200px;'><br><br><button onclick='home()'>return to home</button><button onclick='again()'>play again?</button>";
+  document.getElementById("lose").innerHTML = "<h3 style='font-size: 70px; margin-bottom: 10px;'>you lose.</h1><br><img src='froglose.gif' style='width: 200px;'><br><br><button onclick='home()'>return to home</button><button onclick='again()'>play again?</button>";
 }
 
 //takes user to the game page
